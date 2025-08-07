@@ -1,235 +1,40 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Q1 2024 Earnings Report - [Your Financial Institution Name]</title>
+		<title>reveal.js</title>
 
-    <link rel="stylesheet" href="dist/reveal.css">
-    <link rel="stylesheet" href="dist/theme/moon.css" id="theme">
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
 
-    <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>Slide 1</section>
+				<section>Slide 2</section>
+			</div>
+		</div>
 
-    <!-- KaTeX for Math Equations (using CDN for simplicity and common practice) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVH4PkSF5OgMTVDK7EdEuS/SS9UDovgqbXaCldrgD4YBatt/RhRu6NG7prlK1faMgCT/CDM2/AeVDLefOw==" crossorigin="anonymous">
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
 
-    <style>
-        /* Optional: Basic custom styles for better readability or branding */
-        .reveal h1,
-        .reveal h2,
-        .reveal h3 {
-            color: #42affa; /* A slightly lighter blue for headings */
-        }
-        .reveal .slides section p {
-            font-size: 1.1em;
-            line-height: 1.5;
-        }
-        .reveal .fragment.highlight-current-red.visible {
-            color: #ff5555; /* Ensure custom highlight fragment uses a distinct color */
-        }
-    </style>
-</head>
-<body>
-    <div class="reveal">
-        <div class="slides">
-
-            <!-- Slide 1: Title Slide -->
-            <section>
-                <h1>Q1 2024 Earnings Report</h1>
-                <h3>Driving Growth & Innovation</h3>
-                <p>
-                    <small>Presented by: Your Name (Technical Consultant)</small><br>
-                    <small>Date: April 25, 2024</small><br>
-                    <small>Contact: <a href="mailto:21f3001973@ds.study.iitm.ac.in">21f3001973@ds.study.iitm.ac.in</a></small>
-                </p>
-                <aside class="notes">
-                    Good morning/afternoon everyone. Welcome to our Q1 2024 Earnings Report. I'm excited to share our strong performance and strategic advancements that highlight our commitment to innovation.
-                </aside>
-            </section>
-
-            <!-- Slide 2: Agenda (Markdown Slide) -->
-            <section data-markdown>
-                <script type="text/template">
-                    ## Agenda
-
-                    *   **Executive Summary:** Key financial highlights.
-                    *   **Revenue & Profitability:** Detailed breakdown and margin analysis.
-                    *   **Strategic Tech Initiatives:** Driving future growth.
-                    *   **Modern Data Analytics:** Code example for predictive modeling.
-                    *   **Investment Valuation:** Mathematical formulas for decision-making.
-                    *   **Q&A:** Open discussion and next steps.
-                    *   **Contact Information.**
-                </script>
-                <aside class="notes">
-                    Here's a quick overview of what we'll cover today. We'll dive into our financial performance, highlight key technological advancements, and then open the floor for your questions.
-                </aside>
-            </section>
-
-            <!-- Slide 3: Executive Summary (Animated Elements / Fragments) -->
-            <section>
-                <h2>Q1 2024: Key Highlights</h2>
-                <ul style="list-style-type: none; padding-left: 0;">
-                    <li class="fragment fade-in-then-semi-out">Net Income: <strong class="fragment highlight-red">$1.2 Billion</strong> <small>(+15% Year-over-Year)</small></li>
-                    <li class="fragment fade-in-then-semi-out">Total Revenue: <strong class="fragment highlight-green">$5.8 Billion</strong> <small>(+12% Year-over-Year)</small></li>
-                    <li class="fragment fade-in-then-semi-out">Assets Under Management (AUM): <strong class="fragment highlight-blue">$250 Billion</strong> <small>(+8% Quarter-over-Quarter)</small></li>
-                    <li class="fragment fade-in">Digital User Growth: <strong class="fragment highlight-current-red">30% increase</strong> in active digital users, exceeding targets.</li>
-                </ul>
-                <aside class="notes">
-                    Our first quarter has been exceptionally strong across the board. We've achieved significant growth in Net Income, Total Revenue, and AUM. A standout success is the substantial increase in our active digital users, validating our digital transformation efforts.
-                </aside>
-            </section>
-
-            <!-- Slide 4: Revenue & Profitability (Math Equation + Fragments) -->
-            <section>
-                <h2>Revenue & Profitability Drivers</h2>
-                <p class="fragment fade-in">
-                    Our revenue streams remained diversified and robust:
-                </p>
-                <ul class="fragment fade-in">
-                    <li class="fragment fade-in-then-semi-out">**Investment Banking:** <span style="color: #ff5555;">$2.1 Billion</span> <small>(+18% YoY)</small></li>
-                    <li class="fragment fade-in-then-semi-out">**Wealth Management:** <span style="color: #66cc66;">$1.9 Billion</span> <small>(+10% YoY)</small></li>
-                    <li class="fragment fade-in">**Commercial Lending:** <span style="color: #42affa;">$1.8 Billion</span> <small>(+8% YoY)</small></li>
-                </ul>
-
-                <h3 class="fragment fade-in">Net Profit Margin Calculation</h3>
-                <p class="fragment fade-in">
-                    The **Net Profit Margin** is a key indicator of our operational efficiency:
-                    $$ \text{Net Profit Margin} = \frac{\text{Net Income}}{\text{Revenue}} \times 100\% $$
-                    For Q1 2024, our margin is calculated as:
-                    $$ \text{Net Profit Margin} = \frac{\$1.2 \text{ Billion}}{\$5.8 \text{ Billion}} \approx 20.69\% $$
-                </p>
-                <aside class="notes">
-                    Breaking down our revenue, Investment Banking and Wealth Management continue to be our strongest performers, complemented by solid growth in Commercial Lending. Our Net Profit Margin significantly improved to nearly 21%, reflecting effective cost management and strong top-line growth. This formula clearly illustrates our profitability.
-                </aside>
-            </section>
-
-            <!-- Slide 5: Strategic Tech Initiatives (Animated Fragments) -->
-            <section>
-                <h2>Strategic Tech Initiatives</h2>
-                <p>Investing in the future of finance, enhancing security, and efficiency.</p>
-                <ol style="list-style-type: decimal; padding-left: 1.5em;">
-                    <li class="fragment fade-in-then-semi-out">
-                        **AI-Powered Risk Assessment:** Enhanced real-time fraud detection and credit scoring models.
-                        <small class="fragment fade-in">(Result: Reduced false positives by 15%)</small>
-                    </li>
-                    <li class="fragment fade-in-then-semi-out">
-                        **Blockchain for Trade Finance:** Piloting secure, transparent, and faster cross-border transactions.
-                        <small class="fragment fade-in">(Target: 20% reduction in processing time)</small>
-                    </li>
-                    <li class="fragment fade-in">
-                        **Cloud Migration & Hybrid Cloud Strategy:** Optimizing infrastructure for scalability and resilience.
-                        <small class="fragment fade-in">(Impact: Achieved 10% operational cost savings)</small>
-                    </li>
-                </ol>
-                <aside class="notes">
-                    Our strategic technology investments are yielding tangible results. AI is making our risk management more robust, blockchain is set to revolutionize our trade finance operations, and our hybrid cloud strategy is significantly improving our operational efficiency and cost structure.
-                </aside>
-            </section>
-
-            <!-- Slide 6: Modern Data Analytics (Code Sample with Highlighting) -->
-            <section>
-                <h2>Modern Data Analytics: Customer Lifetime Value (CLV) Prediction</h2>
-                <p>Using Python for predictive modeling to identify high-value customer segments.</p>
-                <pre><code class="language-python" data-line-numbers="1-2|4-5|7-9|11-12|14-16">
-import pandas as pd
-from sklearn.linear_model import LinearRegression
-
-# Sample Data (simplified for illustration)
-data = {
-    'customer_id': [1, 2, 3, 4, 5],
-    'purchase_freq': [5, 10, 3, 8, 12],
-    'avg_order_value': [100, 50, 200, 75, 60],
-    'clv': [750, 1200, 600, 900, 1500]
-}
-df = pd.DataFrame(data)
-
-# Simple Linear Regression Model training
-X = df[['purchase_freq', 'avg_order_value']]
-y = df['clv']
-model = LinearRegression()
-model.fit(X, y)
-
-# Predict CLV for a new potential customer
-new_customer_data = pd.DataFrame({'purchase_freq': [7], 'avg_order_value': [120]})
-predicted_clv = model.predict(new_customer_data)
-print(f"Predicted CLV for new customer: ${predicted_clv[0]:.2f}")
-                </code></pre>
-                <aside class="notes">
-                    This Python snippet demonstrates how we leverage machine learning for predictive analytics, specifically to estimate Customer Lifetime Value. By analyzing customer behavior, we can identify and target our most valuable segments more effectively, enabling personalized marketing and service strategies. The line numbering highlights the data loading, model training, and prediction steps.
-                </aside>
-            </section>
-
-            <!-- Slide 7: Investment Valuation (Another Math Equation) -->
-            <section>
-                <h2>Investment Valuation: Net Present Value (NPV)</h2>
-                <p>A core financial metric for evaluating long-term projects and investments.</p>
-                $$ \text{NPV} = \sum_{t=0}^{n} \frac{C_t}{(1+r)^t} - C_0 $$
-                <p class="fragment fade-in">Where:</p>
-                <ul class="fragment fade-in">
-                    <li>$C_t$: Net cash inflow (or outflow if negative) during period $t$</li>
-                    <li>$C_0$: Initial investment cost (often at $t=0$)</li>
-                    <li>$r$: Discount rate (reflecting cost of capital/risk)</li>
-                    <li>$t$: Number of periods</li>
-                    <li>$n$: Total number of periods</li>
-                </ul>
-                <p class="fragment fade-in">
-                    A **positive NPV** indicates that the projected earnings, adjusted for the time value of money, exceed the initial investment, making it a financially attractive project.
-                </p>
-                <aside class="notes">
-                    The Net Present Value formula is fundamental to our capital allocation decisions. It allows us to compare the long-term profitability of potential projects or acquisitions, taking into account the time value of money. We prioritize projects with a strong positive NPV to maximize shareholder value.
-                </aside>
-            </section>
-
-            <!-- Slide 8: Q&A -->
-            <section>
-                <h2>Questions & Discussion</h2>
-                <p>We welcome your insights and feedback.</p>
-                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2Z3MWR6N2F6bTJxNWJmMDNlMHQyem8zNXc2M3Z0ajZwdzh5NGt3MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0Iy6c20v0B4nNfG8/giphy.gif" alt="Questions" style="height: 300px; border-radius: 8px;">
-                <aside class="notes">
-                    Thank you for your attention. I'd now like to open the floor for any questions you may have regarding our performance, strategic initiatives, or technology advancements.
-                </aside>
-            </section>
-
-            <!-- Slide 9: Thank You / Contact -->
-            <section>
-                <h2>Thank You</h2>
-                <h3>Your Name</h3>
-                <p>Technical Consultant</p>
-                <p>Email: <a href="mailto:21f3001973@ds.study.iitm.ac.in">21f3001973@ds.study.iitm.ac.in</a></p>
-                <p>Website: [Your Financial Institution Website]</p>
-                <aside class="notes">
-                    Thank you for joining us today. Your engagement is highly valued. Please feel free to reach out to me directly if you have any further questions or require additional details.
-                </aside>
-            </section>
-
-        </div>
-    </div>
-
-    <!-- Core Reveal.js JavaScript -->
-    <script src="dist/reveal.js"></script>
-    <!-- Reveal.js Plugins -->
-    <script src="plugin/markdown/markdown.esm.js"></script>
-    <script src="plugin/highlight/highlight.esm.js"></script>
-    <script src="plugin/notes/notes.esm.js"></script>
-    <script src="plugin/math/math.esm.js"></script>
-    <!-- KaTeX specific JS for rendering math (required by RevealMath plugin) -->
-    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-mrADz/0BXxNvZ-AEK1PM4X7+ChJbK3jQeXq/k0/f7N4Q9XfM3s+dK/4+A1gqA4B3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-JpX9a2qXyD/QkGf0L2jX8/D0J6z/U/U2tP5eB4tK+3t6j2F/b4+A1gqA4B3" crossorigin="anonymous"></script>
-
-    <script>
-        Reveal.initialize({
-            controls: true,        // Display controls in the bottom right corner
-            progress: true,        // Display a presentation progress bar
-            center: true,          // Center the slides on the screen
-            hash: true,            // Add the current slide number to the URL hash
-            slideNumber: 'h.v/s',  // Show slide numbers (horizontal.vertical/total)
-
-            // Learn about plugins: https://revealjs.com/plugins/
-            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
-        });
-    </script>
-
-</body>
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
 </html>
